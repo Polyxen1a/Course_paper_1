@@ -1,17 +1,16 @@
-import java.sql.SQLOutput;
-
-public class Basic_difficulty {
+public class BasicDifficulty {
     private static Employee[] employees = new Employee[10];
     public static void printEmployees() {
         for (Employee employee : employees) {
             System.out.println(employee);
         }
+    }
         public static int calculateTotalSalary() {
             int sum = 0;
             for (Employee employee : employees) {
                 sum += employee.getSalary();
             }
-            return;
+            return sum;
         }
         public static Employee findEmployeeWithMinSalary() {
             Employee result = employees[0];
@@ -22,7 +21,7 @@ public class Basic_difficulty {
                     result = employee;
                 }
             }
-            return;
+            return result;
         }
         public static Employee findEmployeeWithMaxSalary() {
             Employee result = employees[0];
@@ -33,7 +32,7 @@ public class Basic_difficulty {
                     result = employee;
                 }
             }
-            return;
+            return result;
         }
         public static float calculateAverageSalary() {
             return calculateTotalSalary() / Employee.getCounter();
