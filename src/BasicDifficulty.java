@@ -44,20 +44,19 @@ public class BasicDifficulty {
         }
         public static void main(String[] args) {
             employees = new Employee[]{
-                    new Employee("Макарова Надежда Владимировна", 15_000, 1);
-            new Employee("Плотников Иван Александрович", 82_000, 2);
-            new Employee("Алексеева Анна Данииловна", 20_000, 3);
-            new Employee("Морозова Дарья Александровна", 24_000, 1);
-            new Employee("Зайцева Екатерина Артемьевна", 30_000, 2);
-            new Employee("Титова София Марковна", 15_000, 1);
-            new Employee("Алексеев Мирон Тигранович", 37_000, 1);
-            new Employee("Лаптев Тимофей Сергеевич", 50_000, 2);
-            new Employee("Прокофьева Владислава Егоровна", 38_000, 3);
-            new Employee("Климова Полина Евгеньевна", 19_000, 1);
+                    new Employee("Макарова Надежда Владимировна", 15_000, 1),
+            new Employee("Плотников Иван Александрович", 82_000, 2),
+            new Employee("Алексеева Анна Данииловна", 20_000, 3),
+            new Employee("Морозова Дарья Александровна", 24_000, 1),
+            new Employee("Зайцева Екатерина Артемьевна", 30_000, 2),
+            new Employee("Титова София Марковна", 15_000, 1),
+            new Employee("Алексеев Мирон Тигранович", 37_000, 1),
+            new Employee("Лаптев Тимофей Сергеевич", 50_000, 2),
+            new Employee("Прокофьева Владислава Егоровна", 38_000, 3),
+            new Employee("Климова Полина Евгеньевна", 19_000, 1),
                     };
             printFullNames();
             printEmployees();
-            System.out.println("avg = " + calculateAverageSalary);
+            System.out.println("avg = " + calculateAverageSalary());
         }
     }
-}
